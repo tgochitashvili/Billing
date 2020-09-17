@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.navbar {
+    background-color: #5265E8;
+    border-bottom-left-radius: 300px 50px;
+    border-bottom-right-radius: 300px 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: calc(100% - 5px);  
+    /* grid-column: 1 / 2; */
+    grid-area: navbar;
+}
+.navbarbggray {
+    background-color: #C2D8EF;
+    border-bottom-left-radius: 300px 50px;
+    border-bottom-right-radius: 300px 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.navbarblue {
+    background-color: #5265E8;
+    border-bottom-left-radius: 300px 50px;
+    border-bottom-right-radius: 300px 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content {
+    /* grid-column: 2 / 3; */
+    /* background-color: lightgray; */
+    grid-area: contentBody;
+    height: calc(100% - 6px);
+}
+
+.topbar {
+    border-color: red;
+    border-style: solid;
+    background-color: lightgray;
+    grid-area: header;
+}
+
+.mainContainer {
+    align-items: start;
+    display: grid;
+    
+    height: 100vh;
+    grid-template: 
+    /* 1fr/
+    auto 1fr; */
+    [header-start] "navbar header" 50px [header-end]
+    [main-start] "navbar content" calc(100vh - 50px - 18px) [main-end] / 2fr 10fr;
+    /* padding: 50%; */
+    column-gap: 10px;
+    row-gap: 18px;
+    background-color: whitesmoke;
+    place-content: stretch;
+    place-items: stretch;
+}
+
+.contentbackground {
+    border-color: red;
+    border-style: solid;
+    background-color: black;
+    grid-area: content;
+    grid-template:
+    [content-start] "contentBody" [content-end];
+}

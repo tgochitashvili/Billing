@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0.15);
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        filter: url(#Mask);
+      }
+    </style>
+    <filter id="Mask" x="0" y="0" width="74" height="74" filterUnits="userSpaceOnUse">
+      <feOffset dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#0f0092" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <circle id="Mask-2" data-name="Mask" class="cls-1" cx="19" cy="19" r="19"/>
+    </clipPath>
+  </defs>
+  <g id="Designer_2" data-name="Designer 2" transform="translate(18 11)">
+    <circle id="Mask_Copy" data-name="Mask Copy" class="cls-1" cx="19" cy="19" r="19" transform="translate(0 0)"/>
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -18, -11)">
+      <path id="Mask-3" data-name="Mask" class="cls-1" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(18 11)"/>
+    </g>
+  </g>
+</svg>
