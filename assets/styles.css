@@ -72,7 +72,7 @@
 .contentbackground {
     border-color: red;
     border-style: solid;
-    background-color: black;
+    background-color: lightgreen;
     grid-area: content;
     grid-template:
     [content-start] "contentBody" [content-end];
