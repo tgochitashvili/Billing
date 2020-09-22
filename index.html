@@ -2,12 +2,14 @@
 <html lang="en">
     <head>
         <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
-        <link rel="stylesheet" href="./assets/styles.css" />
+        <link rel="stylesheet" href="./assets/style.css"/>
+        <link rel="stylesheet" href="./components/navbar/navbar.css"
     </head>
     <body>
         <div id = "billing" class="mainContainer">
             <billing-topbar  class="topbar"></billing-topbar>
-            <billing-navbar class="navbar" @change-component="changeComponent"></billing-navbar>
+            <billing-navbar @change-component="changeComponent" :icons="icons" :buttons="buttons">
+            </billing-navbar>
             <div class="contentbackground">
                 <keep-alive>
                     <component :is="contentComponent" class="content"></component>
@@ -16,10 +18,11 @@
         </div>
         
         <script src="./script.js"></script>
-        <script src="./components/Navbar.js"></script>
+        <script src="./components/navbar/Navbar.js"></script>
         <script src="./components/Topbar.js"></script>
         <script src="./components/Notfound.js"></script>
         <script src="./components/billing/BillingComponent.js"></script>
+        <script src="./components/Button.js"></script>
         <script>
             const billingApp = app.mount("#billing")
         </script>

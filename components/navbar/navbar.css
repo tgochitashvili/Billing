@@ -1,0 +1,91 @@
+.navcontainer {
+    display: grid;
+    grid-area:navbar;
+    grid-template:
+        [navbar-main-start] "navbar-main" 10fr [navbar-main-end]
+        [navbar-footer-start] "footer" 2fr [navbar-footer-end] ;
+    /* grid-template:
+        [logo-start] "logo" 1fr [logo-end]
+        [buttons-start] "buttons" 10fr [buttons-end]
+        [bg-start] "background" [bg-end]
+        [navbar-footer-start] "footer" 2fr [navbar-footer-end]
+    ; */
+}
+
+.navbarb {
+    background-color: #5265E8;
+    border-bottom-left-radius: 450px 50px;
+    border-bottom-right-radius: 450px 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: calc(100% - 5px);  
+    /* grid-column: 1 / 2; */
+    /* grid-area: navbar; */
+    display: grid;
+    grid-template:
+        [logo-start] "logo" 1fr [logo-end]
+        [buttons-start] "menu" 20fr [buttons-end]
+    ;
+    
+}
+
+.logocontainer {
+    grid-area: logo;
+}
+
+.menucontainer {
+    grid-area: menu;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 20px);
+    /* place-items: start; */
+    align-items: baseline;
+    justify-items: end;
+    /* justify-items: end; */
+}
+
+.footercontainer {
+    display: grid;
+    grid-area: footer;
+    place-items: center;
+}
+
+.navbarbggray {
+    background-color: #C2D8EF;
+    border-bottom-left-radius: 450px 50px;
+    border-bottom-right-radius: 450px 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%;
+    grid-area: navbar-main;
+}
+/* .navbarblue {
+    background-color: #5265E8;
+    border-bottom-left-radius: 300px 50px;
+    border-bottom-right-radius: 300px 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} */
+
+.svgicon {
+    height: 10px;
+    display: block; 
+}
+
+.beam {
+    width: 85%;
+    height: 1px;
+    background-color: #e4e8eb;
+}
+
+.menucontainer > button {
+    display: block;
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    outline: none;
+}
+
+.menucontainer > button.active {
+    background-color: red;
+}
