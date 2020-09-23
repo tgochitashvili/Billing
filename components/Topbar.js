@@ -6,7 +6,7 @@ app.component("billing-topbar",{
     /*html*/
     `
         <div contenteditable>
-            This is the topbar
+            This is the topbar.
         </div>
     `,
     data(){

@@ -14,8 +14,10 @@ app.component("nav-button", {
     `
     <button v-bind:class="{ active: isSelected }"
             v-on:click="updateContent">
-        <img :src="buttonDetails[1]">
-        {{ buttonDetails[0] }}
+        <img class="buttonicon" :src="buttonDetails[1]">
+        <span class="name">
+            {{ buttonDetails[0] }}
+        </span>
     </button>
     `,
     data() {

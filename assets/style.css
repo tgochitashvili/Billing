@@ -1,9 +1,19 @@
+body {
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+}
+
 *{
     padding: 0;
     margin: 0;
 }
 
-.container{
+/* .container{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -11,7 +21,7 @@
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-}
+} */
 
 
 .content {
@@ -29,10 +39,15 @@
 }
 
 .mainContainer {
-    align-items: start;
-    display: grid;
-    
+    position: absolute;
+    width: min(1200px, 100vw);
     height: 100vh;
+    transform: translateX(-50%);
+    left: 50%;
+    display: grid;
+
+    align-items: start;
+    
     grid-template: 
     /* 1fr/
     auto 1fr; */
@@ -46,6 +61,7 @@
     background-color: whitesmoke;
     place-content: stretch;
     place-items: stretch;
+    
 }
 
 .contentbackground {

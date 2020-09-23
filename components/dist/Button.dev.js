@@ -13,7 +13,7 @@ app.component("nav-button", {
   },
   template:
   /*html*/
-  "\n    <button v-bind:class=\"{ active: isSelected }\"\n            v-on:click=\"updateContent\">\n        <img :src=\"buttonDetails[1]\">\n        {{ buttonDetails[0] }}\n    </button>\n    ",
+  "\n    <button v-bind:class=\"{ active: isSelected }\"\n            v-on:click=\"updateContent\">\n        <img class=\"buttonicon\" :src=\"buttonDetails[1]\">\n        <span class=\"name\">\n            {{ buttonDetails[0] }}\n        </span>\n    </button>\n    ",
   data: function data() {
     return {};
   },

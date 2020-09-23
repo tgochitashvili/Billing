@@ -18,12 +18,12 @@
     border-bottom-right-radius: 450px 50px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: calc(100% - 5px);  
-    /* grid-column: 1 / 2; */
-    /* grid-area: navbar; */
+    height: calc(100% - 5px);
     display: grid;
     grid-template:
+        [top-padding-start] "top-padding" 15px [top-padding-end]
         [logo-start] "logo" 1fr [logo-end]
+        [mid-padding-start] "mid-padding" 35px [mid-padding-end]
         [buttons-start] "menu" 20fr [buttons-end]
     ;
     
@@ -31,16 +31,15 @@
 
 .logocontainer {
     grid-area: logo;
+    /* display: grid; */
+    row-gap: 10px;
+    justify-self: center;
 }
 
 .menucontainer {
     grid-area: menu;
     display: grid;
-    grid-template-rows: repeat(auto-fill, 20px);
-    /* place-items: start; */
-    align-items: baseline;
-    justify-items: end;
-    /* justify-items: end; */
+    grid-template-rows: repeat(auto-fill, 35px);
 }
 
 .footercontainer {
@@ -66,10 +65,10 @@
     border-top-right-radius: 10px;
 } */
 
-.svgicon {
+/* .svgicon {
     height: 10px;
     display: block; 
-}
+} */
 
 .beam {
     width: 85%;
@@ -78,14 +77,29 @@
 }
 
 .menucontainer > button {
-    display: block;
+    display: grid;
+    justify-items: center;
+    grid-template:
+        [button-start] "icon" "name" [button-end]
+        ;
     background: transparent;
     box-shadow: 0px 0px 0px transparent;
     border: 0px solid transparent;
     text-shadow: 0px 0px 0px transparent;
     outline: none;
+    height: 30px;
+    color: white;
+    width: 213px;
+    align-items: center;
+}
+.menucontainer > button > .buttonicon {
+    grid-area: icon;
+}
+
+.menucontainer > button > .name {
+    grid-area: name;
 }
 
 .menucontainer > button.active {
-    background-color: red;
+    background-color: #ffffff1a;
 }
