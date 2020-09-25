@@ -10,6 +10,13 @@
         [bg-start] "background" [bg-end]
         [navbar-footer-start] "footer" 2fr [navbar-footer-end]
     ; */
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
 }
 
 .navbarb {
@@ -40,6 +47,7 @@
     grid-area: menu;
     display: grid;
     grid-template-rows: repeat(auto-fill, 35px);
+    justify-items: end;
 }
 
 .footercontainer {
@@ -78,9 +86,9 @@
 
 .menucontainer > button {
     display: grid;
-    justify-items: center;
+    justify-items: start;
     grid-template:
-        [button-start] "icon" "name" [button-end]
+        [button-start] "spacingleft icon name spacingright" [button-end]/35px 1fr 2fr 50px
         ;
     background: transparent;
     box-shadow: 0px 0px 0px transparent;
@@ -91,6 +99,9 @@
     color: white;
     width: 213px;
     align-items: center;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
 }
 .menucontainer > button > .buttonicon {
     grid-area: icon;

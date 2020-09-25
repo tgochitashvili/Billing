@@ -6,6 +6,7 @@ body {
     font-style: normal;
     line-height: 1.36;
     letter-spacing: normal;
+    /* cursor: URL("./SVG/cursor.svg"); */
 }
 
 *{
@@ -52,7 +53,7 @@ body {
     /* 1fr/
     auto 1fr; */
     [header-start] "navbar header" 65px [header-end]
-    [main-start] "navbar content" [main-end] / 1fr 10fr;
+    [main-start] "navbar content" [main-end] / 222px 10fr;
     /* [main-start] "navbar content" calc(100vh - 65px - 18px) [main-end] / 2fr 10fr; */
 
     /* padding: 50%; */
