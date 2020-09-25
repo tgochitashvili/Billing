@@ -42,8 +42,6 @@ app.component("billing-navbar",{
                         Content
                     </button>
                     <br>
-
-
                 -->
                     <div>General</div>
                     <nav-button @update-component="updateComponent"

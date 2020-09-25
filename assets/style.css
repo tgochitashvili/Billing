@@ -1,11 +1,13 @@
 body {
     font-family: Nunito;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 600;
-    font-stretch: normal;
+    /* font-stretch: normal;
     font-style: normal;
     line-height: 1.36;
-    letter-spacing: normal;
+    letter-spacing: normal; */
+
+    
     /* cursor: URL("./SVG/cursor.svg"); */
 }
 
