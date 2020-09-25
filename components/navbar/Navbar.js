@@ -45,12 +45,56 @@ app.component("billing-navbar",{
 
 
                 -->
-                    <nav-button @update-component="updateComponent" 
-                                :buttonDetails="buttons['billing']" 
+                    <div>General</div>
+                    <nav-button @update-component="updateComponent"
+                                :buttonDetails="buttons['dashboard']"
+                                :clickedButtonDetails="clickedButtonDetails">
+                    </nav-button>
+                    <div>Analytics</div>
+                    <nav-button @update-component="updateComponent"
+                                :buttonDetails="buttons['answered']"
+                                :clickedButtonDetails="clickedButtonDetails">
+                    </nav-button>
+                    <nav-button @update-component="updateComponent"
+                                :buttonDetails="buttons['unanswered']"
+                                :clickedButtonDetails="clickedButtonDetails">
+                    </nav-button>
+                    <div>Team Management</div>
+                    <nav-button @update-component="updateComponent"
+                                :buttonDetails="buttons['users']"
                                 :clickedButtonDetails="clickedButtonDetails">
                     </nav-button>
                     <nav-button @update-component="updateComponent" 
                                 :buttonDetails="buttons['departments']" 
+                                :clickedButtonDetails="clickedButtonDetails">
+                    </nav-button>
+                    <nav-button @update-component="updateComponent"
+                                :buttonDetails="buttons['devices']"
+                                :clickedButtonDetails="clickedButtonDetails">
+                    </nav-button>
+                    <div>Visitors</div>
+                    <nav-button @update-component="updateComponent" 
+                                :buttonDetails="buttons['settings']" 
+                                :clickedButtonDetails="clickedButtonDetails">
+                    </nav-button>
+                    <nav-button @update-component="updateComponent" 
+                                :buttonDetails="buttons['blocked']" 
+                                :clickedButtonDetails="clickedButtonDetails">
+                    </nav-button>
+                    <div>
+                        Widgets
+                    </div>
+                    <nav-button @update-component="updateComponent" 
+                                :buttonDetails="buttons['widgets']" 
+                                :clickedButtonDetails="clickedButtonDetails">
+                    </nav-button>
+                    <nav-button @update-component="updateComponent" 
+                                :buttonDetails="buttons['generate']" 
+                                :clickedButtonDetails="clickedButtonDetails">
+                    </nav-button>
+                    <div>Account</div>
+                    <nav-button @update-component="updateComponent" 
+                                :buttonDetails="buttons['billing']" 
                                 :clickedButtonDetails="clickedButtonDetails">
                     </nav-button>
                 </div>

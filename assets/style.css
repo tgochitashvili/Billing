@@ -33,10 +33,9 @@ body {
 }
 
 .topbar {
-    border-color: red;
-    border-style: solid;
-    background-color: lightgray;
+    background-color: white;
     grid-area: header;
+    margin-left: -10px;
 }
 
 .mainContainer {
