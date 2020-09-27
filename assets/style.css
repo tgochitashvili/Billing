@@ -37,12 +37,29 @@ body {
 .topbar {
     background-color: white;
     grid-area: header;
-    margin-left: -10px;
+    margin-left: -16px;
+    display: grid;
+    grid-template:
+        [search-start] "search" [search-end];
+    align-items: center;
+}
+
+.topbar > input.search {
+    width: 500px;
+    height: 36px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    grid-area: search;
+    margin-left: 10px;
+    padding-left: 20px;
+    background-color: #f9fbfc;
 }
 
 .mainContainer {
     position: absolute;
-    width: min(1200px, 100vw);
+    /* width: min(1440px, 100vw); */
+    width: 100vw;
     height: 100vh;
     transform: translateX(-50%);
     left: 50%;
@@ -58,7 +75,7 @@ body {
     /* [main-start] "navbar content" calc(100vh - 65px - 18px) [main-end] / 2fr 10fr; */
 
     /* padding: 50%; */
-    column-gap: 10px;
+    column-gap: 16px;
     row-gap: 18px;
     background-color: whitesmoke;
     place-content: stretch;
@@ -67,9 +84,11 @@ body {
 }
 
 .contentbackground {
-    border-color: red;
-    border-style: solid;
-    background-color: lightgreen;
+    /* border-color: red; */
+    /* border-style: solid; */
+    margin-right: 16px;
+    margin-bottom: 16px;
+    background-color: white; 
     grid-area: content;
     grid-template:
     [content-start] "contentBody" [content-end];

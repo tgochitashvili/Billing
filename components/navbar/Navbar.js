@@ -17,38 +17,16 @@ app.component("billing-navbar",{
             <div class="navbarb">
                 <img :src="livecaller" class="logocontainer">
                 <div class="menucontainer">
-                <!--
-
-                
-                    <div v-for="icon in icons">
-                        <img class="svgicon" :src="icon"> {{ icon }}
-                        <br>
+                    <div>
+                        General
                     </div>
-
-
-                -->
-
-
-                <!--
-
-
-                    <button 
-                        v-on:click="updateComponent('billing-notfound')">
-                        Notfound
-                    </button>
-                    <br>
-                    <button 
-                        v-on:click="updateComponent('billing-component')">
-                        Content
-                    </button>
-                    <br>
-                -->
-                    <div>General</div>
                     <nav-button @update-component="updateComponent"
                                 :buttonDetails="buttons['dashboard']"
                                 :clickedButtonDetails="clickedButtonDetails">
                     </nav-button>
-                    <div>Analytics</div>
+                    <div>
+                        Analytics
+                    </div>
                     <nav-button @update-component="updateComponent"
                                 :buttonDetails="buttons['answered']"
                                 :clickedButtonDetails="clickedButtonDetails">
@@ -57,7 +35,9 @@ app.component("billing-navbar",{
                                 :buttonDetails="buttons['unanswered']"
                                 :clickedButtonDetails="clickedButtonDetails">
                     </nav-button>
-                    <div>Team Management</div>
+                    <div>
+                        Team Management
+                    </div>
                     <nav-button @update-component="updateComponent"
                                 :buttonDetails="buttons['users']"
                                 :clickedButtonDetails="clickedButtonDetails">
@@ -70,7 +50,9 @@ app.component("billing-navbar",{
                                 :buttonDetails="buttons['devices']"
                                 :clickedButtonDetails="clickedButtonDetails">
                     </nav-button>
-                    <div>Visitors</div>
+                    <div>
+                        Visitors
+                    </div>
                     <nav-button @update-component="updateComponent" 
                                 :buttonDetails="buttons['settings']" 
                                 :clickedButtonDetails="clickedButtonDetails">
@@ -90,7 +72,9 @@ app.component("billing-navbar",{
                                 :buttonDetails="buttons['generate']" 
                                 :clickedButtonDetails="clickedButtonDetails">
                     </nav-button>
-                    <div>Account</div>
+                    <div>
+                        Account
+                    </div>
                     <nav-button @update-component="updateComponent" 
                                 :buttonDetails="buttons['billing']" 
                                 :clickedButtonDetails="clickedButtonDetails">
@@ -101,9 +85,10 @@ app.component("billing-navbar",{
         </div>
 
         <div class="footercontainer">
-            
+            <button class="help">Help & Feedback
+            </button>
             <div class="beam"></div>
-            asdawsawdaw
+            <span class="tm">LIVECALLER.IO 2019</span>
         </div>
     </div>    
     `,

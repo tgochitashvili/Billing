@@ -5,8 +5,8 @@ app.component("billing-topbar",{
     template:
     /*html*/
     `
-        <div contenteditable>
-            This is the topbar.
+        <div>
+            <input class="search" type="text" placeholder="Search">
         </div>
     `,
     data(){

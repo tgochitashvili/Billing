@@ -115,10 +115,6 @@
     background-color: #ffffff1a;
 }
 
-.menucontainer > button:hover{
-    background-color: lightgray;
-}
-
 .menucontainer > div {
     font-size: 14px;
     font-weight: semibold;
@@ -129,14 +125,51 @@
     padding-left: 15%;
 }
 
-@media (min-width: 768px){
+button.help {
+    border:none;
+    outline: none;
+    background-color: transparent;
+    color: #5265E8;
+    margin-bottom: -70px;
+}
+
+.tm {
+    margin-top: -50px;
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4a4a;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
     .menucontainer > div {
         font-size: 20px;
     }
+
     .menucontainer > button {
         font-size: 18px;
         grid-template:
         [button-start] "spacingleft icon name spacingright" [button-end]/35px 1fr 3fr 10px
         ;
     }
+    
+    button.help {
+        font-size: 20px;
+    }
+
+    .tm {
+        font-size: 18px;
+    }
 }
+
+@media (hover){
+    .menucontainer > button:hover{
+        background-color: #ffffff13;
+    }
+}
+

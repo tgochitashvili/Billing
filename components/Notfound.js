@@ -4,7 +4,12 @@ app.component("billing-notfound",{
     template:
     /*html*/
     `
-    <div contenteditable>
+    <style>
+        .billing-notfound {
+            background-color: red;
+        }
+    </style>
+    <div class="billing-notfound" contenteditable>
         404: This component is unavailable.
     </div>
     `,
