@@ -1,0 +1,59 @@
+.topbar {
+    background-color: white;
+    grid-area: header;
+    margin-left: -16px;
+    display: grid;
+    grid-template:
+        [search-start] "search serve nbell divider profile" [search-end];
+    align-items: center;
+}
+
+.topbar > input.search {
+    font-size: 15px;
+    width: 500px;
+    height: 36px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    grid-area: search;
+    margin-left: 10px;
+    padding-left: 20px;
+    background-color: #f9fbfc;
+    color: #8e8d90;
+    background-image: url("../../assets/SVG/search.svg");
+    background-position: 97.3% 50%;
+    background-repeat: no-repeat;
+}
+
+.topbar > input.search:focus {
+    content: none;
+    /* background-image: none; */
+}
+
+.topbar > button.serve {
+    grid-area: serve;
+    border: none;
+    border-radius: 50px;
+    display: absolute;
+    width: 134px;
+    height: 38px;
+    background-color: #27dca0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.topbar > button.nbell {
+    grid-area: nbell;
+    border: none;
+    background-color: none;
+    width: 0px;
+}
+
+.topbar > div.divider {
+    grid-area: divider;
+    width: 1px;
+    height: 30px;
+    align-self: center;
+    background-color: black;
+}

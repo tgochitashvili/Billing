@@ -16,6 +16,7 @@ app.component("billing-navbar",{
         <div class="navbarbggray">
             <div class="navbarb">
                 <img :src="livecaller" class="logocontainer">
+                
                 <div class="menucontainer">
                     <div>
                         General

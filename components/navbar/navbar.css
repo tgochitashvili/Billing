@@ -125,7 +125,7 @@
     padding-left: 15%;
 }
 
-button.help {
+.footercontainer > button.help {
     border:none;
     outline: none;
     background-color: transparent;
