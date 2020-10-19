@@ -16,7 +16,7 @@ app.component("billing-topbar",{
                 Serve 1 Request
             </button>
             <button class="nbell">
-                <img style="height: 20px" src="./assets/SVG/bell.svg">
+                <img style="height: 20px" src="/assets/SVG/bell.svg">
             </button>
             <div class="divider">
             </div>
