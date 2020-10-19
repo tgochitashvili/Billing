@@ -91,7 +91,7 @@ app.component("billing-navbar",{
     `,
     data(){
         return {
-            livecaller: "assets/SVG/livecaller.svg",
+            livecaller: "/assets/SVG/livecaller.svg",
             clickedButtonDetails: this.buttons["billing"]
         }
     },
