@@ -1,9 +1,5 @@
 app.component("billing-navbar",{
     props: {
-        icons: {
-            type: Array,
-            required: true
-        },
         buttons: {
             type: Object,
             required: true
