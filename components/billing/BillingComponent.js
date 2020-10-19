@@ -4,8 +4,11 @@ app.component("billing-component",{
     template:
     /*html*/
     `   
-    <div contenteditable class="object">
-        Content Area.
+    <div class="billingcontainer">
+        <div class="gradientbg">
+            <img src="./assets/SVG/rocket.svg" class="icon">
+            <div class="service">Upgrade</div>
+        </div>
     </div>
 
         

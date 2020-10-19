@@ -4,7 +4,7 @@
     margin-left: -16px;
     display: grid;
     grid-template:
-        [search-start] "search serve nbell divider profile" [search-end];
+        [search-start] "search serve nbell divider profile" [search-end]/1fr 134px 40px 41px 200px;
     align-items: center;
 }
 
@@ -39,8 +39,14 @@
     height: 38px;
     background-color: #27dca0;
     color: white;
+    font-family: Nunito;
     font-size: 14px;
     font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: center;
 }
 
 .topbar > button.nbell {
@@ -48,6 +54,8 @@
     border: none;
     background-color: none;
     width: 0px;
+    justify-self: end;
+    height: 20px;
 }
 
 .topbar > div.divider {
@@ -55,5 +63,54 @@
     width: 1px;
     height: 30px;
     align-self: center;
-    background-color: black;
+    background-color: #e4e8eb;
+    justify-self: end;
+}
+
+.topbar > div.profilecontainer {
+    /* margin-left: 35px; */
+    justify-self: end;
+    grid-area: profile;
+    margin-right: 20%;
+    font-family: Lato;
+    display: grid;
+    grid-template: 
+        [profile-top-start] "name   avatar" [profile-top-end]
+        [profile-bot-start] "status avatar" [profile-bot-end]
+}
+
+.topbar > div.profilecontainer > img.avatar {
+    height: 36px;
+    margin-left: 11px;
+    border-radius: 50px;
+    grid-area: avatar;
+}
+
+.topbar > div.profilecontainer > div.name {
+    font-size: 14px;
+    grid-area: name;
+    color: #4a4a4a;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.topbar > div.profilecontainer > div.status {
+    font-size: 10px;
+    text-transform: uppercase;
+    grid-area: status;
+    justify-self: end;
+}
+
+.topbar > div.profilecontainer > div.status.online {
+    color: #19c500;
+}
+
+.topbar > div.profilecontainer > div.status.offline {
+    color: lightgray;
 }

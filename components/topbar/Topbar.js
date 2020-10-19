@@ -16,14 +16,25 @@ app.component("billing-topbar",{
                 Serve 1 Request
             </button>
             <button class="nbell">
-                <img src="./assets/SVG/bell.svg">
+                <img style="height: 20px" src="./assets/SVG/bell.svg">
             </button>
             <div class="divider">
             </div>
+            <div class="profilecontainer">
+                <div class="name">
+                    {{ name }}
+                </div>
+                <div class="status" :class="status">
+                    {{ status }}
+                </div>
+                <img class="avatar" src="https://thispersondoesnotexist.com/image">
+            </div>
+        </div>
     `,
     data(){
         return {
-
+            status: "online",
+            name: "Saul Berenson"
         }
     },
     methods: {

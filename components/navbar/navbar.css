@@ -103,6 +103,7 @@
     border-bottom-left-radius: 50px;
     cursor: pointer;
 }
+
 .menucontainer > button > .buttonicon {
     grid-area: icon;
 }
@@ -111,9 +112,17 @@
     grid-area: name;
 }
 
+@media (hover){
+    .menucontainer > button:hover{
+        background-color: #ffffff11 ;
+    }
+}
+
+
 .menucontainer > button.active {
     background-color: #ffffff1a;
 }
+
 
 .menucontainer > div {
     font-size: 14px;
@@ -147,6 +156,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
+    
     .menucontainer > div {
         font-size: 20px;
     }
@@ -167,9 +177,5 @@
     }
 }
 
-@media (hover){
-    .menucontainer > button:hover{
-        background-color: #ffffff13;
-    }
-}
+
 
